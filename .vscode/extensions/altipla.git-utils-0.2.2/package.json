@@ -1,0 +1,95 @@
+{
+	"name": "git-utils",
+	"displayName": "Git Utils",
+	"description": "",
+	"version": "0.2.2",
+	"publisher": "altipla",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/altipla-consulting/git-utils.git"
+	},
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:git-utils.add",
+		"onCommand:git-utils.commit",
+		"onCommand:git-utils.amendCommit",
+		"onCommand:git-utils.unstageAll",
+		"onCommand:git-utils.unstage",
+		"onCommand:git-utils.ciPush",
+		"onCommand:git-utils.diffAll",
+		"onCommand:git-utils.diff",
+		"onCommand:git-utils.ciUpdate"
+	],
+	"main": "./src/main.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "git-utils.add",
+				"title": "Git: Add... [altipla]"
+			},
+			{
+				"command": "git-utils.commit",
+				"title": "Git: Commit [altipla]"
+			},
+			{
+				"command": "git-utils.amendCommit",
+				"title": "Git: Amend [altipla]"
+			},
+			{
+				"command": "git-utils.unstageAll",
+				"title": "Git: Reset (unstage) All [altipla]"
+			},
+			{
+				"command": "git-utils.unstage",
+				"title": "Git: Reset (unstage) Current File [altipla]"
+			},
+			{
+				"command": "git-utils.ciPush",
+				"title": "Git: CI Push [altipla]"
+			},
+			{
+				"command": "git-utils.diffAll",
+				"title": "Git: Diff All Files [altipla]"
+			},
+			{
+				"command": "git-utils.diff",
+				"title": "Git: Diff Current File [altipla]"
+			},
+			{
+				"command": "git-utils.ciUpdate",
+				"title": "Git: CI Update [altipla]"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.55.0",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"normalize-newline": "^3.0.0"
+	},
+	"__metadata": {
+		"id": "11c4f82b-cff2-4cc5-8b80-7aaad58548dd",
+		"publisherId": "f8755bea-1c49-42ac-83ad-2cb33e500f24",
+		"publisherDisplayName": "Altipla Consulting",
+		"installedTimestamp": 1621415419338
+	}
+}

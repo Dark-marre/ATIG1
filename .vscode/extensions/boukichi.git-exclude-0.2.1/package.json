@@ -1,0 +1,142 @@
+{
+	"name": "git-exclude",
+	"displayName": "Git Exclude",
+	"description": "Edit Git exclude File",
+	"version": "0.2.1",
+	"publisher": "boukichi",
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"homepage": "https://github.com/BouKiCHi/git-exclude",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BouKiCHi/git-exclude.git"
+	},
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"git"
+	],
+	"activationEvents": [
+		"onCommand:GitExclude.editGitExclude",
+		"onCommand:GitExclude.appendGitExcludeUri",
+		"onCommand:GitExclude.skipGitWorktreeUri",
+		"onCommand:GitExclude.noSkipGitWorktreeUri",
+		"onCommand:GitExclude.setAssumeUnchangedUri",
+		"onCommand:GitExclude.noAssumeUnchangedUri",
+		"onCommand:GitExclude.appendGitExcludeUriSCM",
+		"onCommand:GitExclude.skipGitWorktreeUriSCM",
+		"onCommand:GitExclude.setAssumeUnchangedSCM"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "GitExclude.editGitExclude",
+				"title": "%GitExclude.editGitExclude.title%"
+			},
+			{
+				"command": "GitExclude.appendGitExcludeUri",
+				"title": "%GitExclude.appendGitExcludeUri.title%"
+			},
+			{
+				"command": "GitExclude.skipGitWorktreeUri",
+				"title": "%GitExclude.skipGitWorktreeUri.title%"
+			},
+			{
+				"command": "GitExclude.noSkipGitWorktreeUri",
+				"title": "%GitExclude.noSkipGitWorktreeUri.title%"
+			},
+			{
+				"command": "GitExclude.skipGitWorktreeUri",
+				"title": "%GitExclude.skipGitWorktreeUri.title%"
+			},
+			{
+				"command": "GitExclude.noSkipGitWorktreeUri",
+				"title": "%GitExclude.noSkipGitWorktreeUri.title%"
+			},
+			{
+				"command": "GitExclude.setAssumeUnchangedUri",
+				"title": "%GitExclude.setAssumeUnchangedUri.title%"
+			},
+			{
+				"command": "GitExclude.noAssumeUnchangedUri",
+				"title": "%GitExclude.noAssumeUnchangedUri.title%"
+			},
+			{
+				"command": "GitExclude.appendGitExcludeUriSCM",
+				"title": "%GitExclude.appendGitExcludeUri.title%"
+			},
+			{
+				"command": "GitExclude.skipGitWorktreeUriSCM",
+				"title": "%GitExclude.skipGitWorktreeUri.title%"
+			},
+			{
+				"command": "GitExclude.setAssumeUnchangedSCM",
+				"title": "%GitExclude.setAssumeUnchangedUri.title%"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "GitExclude.appendGitExcludeUri",
+					"group": "GitExclude"
+				},
+				{
+					"command": "GitExclude.skipGitWorktreeUri",
+					"group": "GitExclude"
+				},
+				{
+					"command": "GitExclude.noSkipGitWorktreeUri",
+					"group": "GitExclude"
+				},
+				{
+					"command": "GitExclude.setAssumeUnchangedUri",
+					"group": "GitExclude"
+				},
+				{
+					"command": "GitExclude.noAssumeUnchangedUri",
+					"group": "GitExclude"
+				}
+			],
+			"scm/resourceState/context": [
+				{
+					"command": "GitExclude.appendGitExcludeUriSCM",
+					"group": "GitExclude"
+				},
+				{
+					"command": "GitExclude.skipGitWorktreeUriSCM",
+					"group": "GitExclude"
+				},
+				{
+					"command": "GitExclude.setAssumeUnchangedSCM",
+					"group": "GitExclude"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^8.0.3",
+		"@types/node": "^14.6.2",
+		"minimist": "^1.2.5",
+		"typescript": "^4.0.2",
+		"vscode": "^1.1.37"
+	},
+	"dependencies": {},
+	"__metadata": {
+		"id": "8a84fccb-5378-4c31-acce-a4924abaa382",
+		"publisherId": "b53730a3-c9b0-44be-8b59-46dbec638ad1",
+		"publisherDisplayName": "BouKiCHi",
+		"installedTimestamp": 1621415268091
+	}
+}

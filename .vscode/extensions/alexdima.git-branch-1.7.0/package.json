@@ -1,0 +1,110 @@
+{
+	"name": "git-branch",
+	"displayName": "git-branch",
+	"description": "",
+	"publisher": "alexdima",
+	"version": "1.7.0",
+	"activationEvents": [
+		"onView:git-branch.view",
+		"onCommand:git-branch.refresh"
+	],
+	"main": "./out/extension.js",
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"extensionDependencies": [
+		"vscode.git"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile"
+	},
+	"devDependencies": {
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.39.0",
+		"typescript": "^3.3.1"
+	},
+	"contributes": {
+		"views": {
+			"scm": [
+				{
+					"id": "git-branch.view",
+					"name": "Git Branch",
+					"when": "config.git.enabled"
+				}
+			]
+		},
+		"commands": {
+			"command": "git-branch.refresh",
+			"title": "Refresh Git Branch",
+			"icon": {
+				"dark": "./resources/icons/dark/action-refresh.svg",
+				"light": "./resources/icons/light/action-refresh.svg"
+			}
+		},
+		"menus": {
+			"view/title": [
+				{
+					"command": "git-branch.refresh",
+					"group": "navigation",
+					"when": "view == git-branch.view"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Git Branch",
+			"properties": {
+				"gitBranch.mergeBase": {
+					"type": "string",
+					"default": "",
+					"description": "Merge Base branch"
+				},
+				"gitBranch.base": {
+					"type": "string",
+					"default": "master",
+					"description": "Base branch"
+				},
+				"gitBranch.diffExcludes": {
+					"type": "array",
+					"default": [],
+					"description": "List of excludes",
+					"items": {
+						"type": "string"
+					}
+				},
+				"gitBranch.diffGroups": {
+					"type": "array",
+					"default": [],
+					"description": "List of excludes",
+					"items": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string"
+							},
+							"files": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexdima/vscode-git-branch"
+	},
+	"__metadata": {
+		"id": "f0ac94f2-4473-4eb7-a44b-208edf9a96e9",
+		"publisherId": "36c010fa-f346-4325-ab00-0e8c727dbe17",
+		"publisherDisplayName": "alexdima",
+		"installedTimestamp": 1621415417323
+	}
+}

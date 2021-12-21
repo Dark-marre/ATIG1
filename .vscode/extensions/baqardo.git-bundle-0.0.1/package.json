@@ -1,0 +1,23 @@
+{
+	"name": "git-bundle",
+	"displayName": "GIT Bundle",
+	"description": "GIT Extensions",
+	"version": "0.0.1",
+	"publisher": "baqardo",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"michelemelluso.gitignore",
+		"eamodio.gitlens"
+	],
+	"__metadata": {
+		"id": "3b5049c7-2e3a-4f53-a234-b07edc470dd1",
+		"publisherId": "832d2e3e-b372-4897-8d13-fef211249ffc",
+		"publisherDisplayName": "baqardo",
+		"installedTimestamp": 1621415412343
+	}
+}

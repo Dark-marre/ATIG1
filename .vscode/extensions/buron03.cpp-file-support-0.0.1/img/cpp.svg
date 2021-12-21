@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 400 400">
+    
+    <defs>
+        <linearGradient id="Gradient-1"
+             x1="0" y1="0" x2="0" y2="100%">
+            <stop offset="0%" stop-color="#007ACC" />
+            <stop offset="100%" stop-color="#002C46" />
+        </linearGradient>
+
+        <linearGradient id="Gradient-2"
+             x1="0" y1="0" x2="0" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="100%" stop-color="#888888"/>
+        </linearGradient>
+    </defs>
+
+    <rect id="background" x="0" y="0" width="400" height="400" rx="80" ry="80" 
+        fill="url(#Gradient-1)" stroke="none"/>
+
+    <path 
+        id="c"
+        fill="url(#Gradient-2)"
+        stroke="none"
+        d="M 200.7106 129.2893
+        A 100 100 0 1 0 200.7106 270.7107
+        L 165.3553 235.3554
+        A 50 50 0 1 1 165.3553 164.6446
+        L 200.7106 129.2893"
+    />
+
+    <path 
+        id="down_plus"
+        fill="url(#Gradient-2)"
+        stroke="none"
+        d="M 250 250
+        L 250 233.3333
+        L 233.3333 233.3333
+        L 233.3333 216.6666
+        L 250 216.6666
+        L 250 200
+        L 266.6666 200
+        L 266.6666 216.6666
+        L 283.3333 216.6666
+        L 283.3333 233.3333
+        L 266.6666 233.3333
+        L 266.6666 250
+        L 250 250" 
+    />
+
+    <path 
+        id="up_plus"
+        fill="url(#Gradient-2)"
+        stroke="none"
+        d="M 250 179.2893
+        L 250 162.6223
+        L 233.3333 162.6223
+        L 233.3333 145.9557
+        L 250 145.9557
+        L 250 129.2891
+        L 266.6666 129.2891
+        L 266.6666 145.9557
+        L 283.3333 145.9557
+        L 283.3333 162.6223
+        L 266.6666 162.6223
+        L 266.6666 179.2893
+        L 250 179.2893" 
+    />
+
+    <path 
+        id="dash"
+        fill="url(#Gradient-2)"
+        stroke="none"
+        d="M 300 100
+        L 320 100
+        L 360 300
+        L 340 300
+        L 300 100" 
+    />
+</svg>

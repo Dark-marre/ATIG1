@@ -1,0 +1,15 @@
+/Users/ATIG1/Documents/web/tuto_app/bin/Debug/net6.0/tuto_app
+/Users/ATIG1/Documents/web/tuto_app/bin/Debug/net6.0/tuto_app.deps.json
+/Users/ATIG1/Documents/web/tuto_app/bin/Debug/net6.0/tuto_app.runtimeconfig.json
+/Users/ATIG1/Documents/web/tuto_app/bin/Debug/net6.0/tuto_app.dll
+/Users/ATIG1/Documents/web/tuto_app/bin/Debug/net6.0/ref/tuto_app.dll
+/Users/ATIG1/Documents/web/tuto_app/bin/Debug/net6.0/tuto_app.pdb
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.csproj.AssemblyReference.cache
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.AssemblyInfoInputs.cache
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.AssemblyInfo.cs
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.csproj.CoreCompileInputs.cache
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.dll
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/ref/tuto_app.dll
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.pdb
+/Users/ATIG1/Documents/web/tuto_app/obj/Debug/net6.0/tuto_app.genruntimeconfig.cache

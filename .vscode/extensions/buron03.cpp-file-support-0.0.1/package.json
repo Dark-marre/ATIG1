@@ -1,0 +1,77 @@
+{
+	"name": "cpp-file-support",
+	"displayName": "Cpp File Support",
+	"description": "VSCode Cpp Run & Compile Tasks Builder",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"publisher": "Buron03",
+	"author": {
+		"name": "David Alejandro Lopez Torres",
+		"email": "a17300155@ceti.mx"
+	},
+	"license": "GPLv3",
+	"homepage": "https://github.com/Buron03/cpp-file-support",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Buron03/cpp-file-support"
+	},
+	"keywords": [
+		"Cpp",
+		"C++",
+		"File Support"
+	],
+	"icon": "img/cpp-128x128.png",
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cpp-file-support.createCppProject",
+				"title": "Create C++ Project"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "alt+f9",
+				"command": "workbench.action.tasks.build"
+			},
+			{
+				"key": "ctrl+f9",
+				"command": "workbench.action.tasks.test"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.15.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	},
+	"dependencies": {
+		"mkdirp": "^1.0.4",
+		"vsce": "^1.83.0"
+	},
+	"__metadata": {
+		"id": "7b912861-0ffc-4506-a8d2-712febd2b59f",
+		"publisherId": "38e9a9d9-5443-428f-b282-c6e42c8eae02",
+		"publisherDisplayName": "Buron03",
+		"installedTimestamp": 1621584141441
+	}
+}

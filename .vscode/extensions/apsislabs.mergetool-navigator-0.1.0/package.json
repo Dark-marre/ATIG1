@@ -1,0 +1,68 @@
+{
+	"name": "mergetool-navigator",
+	"displayName": "Git Merge Navigator",
+	"author": "Apsis Labs",
+	"publisher": "apsislabs",
+	"description": "Navigate between git merge conflicts.",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"keybindings": [
+			{
+				"command": "gitmerge.nextMergeConflict",
+				"key": "alt+=",
+				"mac": "alt+=",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "gitmerge.prevMergeConflict",
+				"key": "alt+-",
+				"mac": "alt+-",
+				"when": "editorTextFocus"
+			}
+		],
+		"commands": [
+			{
+				"command": "gitmerge.nextMergeConflict",
+				"title": "Merge Conflict Navigator: Next Conflict"
+			},
+			{
+				"command": "gitmerge.prevMergeConflict",
+				"title": "Merge Conflict Navigator: Previous Conflict"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.0-next.0"
+	},
+	"__metadata": {
+		"id": "5997fbb6-6724-49da-9e16-a78690ef1800",
+		"publisherId": "d0c21cc1-8241-4020-9eb2-cc72febb4bee",
+		"publisherDisplayName": "Apsis Labs",
+		"installedTimestamp": 1621415378158
+	}
+}
